@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color: gray;
+}
+
+.app {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.div-title {
+	text-indent: 30px;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+
+/* intro section */
+.intro {
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+
+@keyframes gradient {
+	0% {
+		background: #4cc9f0;
+	}
+	20% {
+		background: #4361ee;
+	}
+	40% {
+		background: #3a0ca3;
+	}
+	60% {
+		background: #7209b7;
+	}
+	80% {
+		background: #f72585;
+	}
+	100% {
+		background: #4cc9f0;
+	}
+}
+
+
+
+.text-group1 {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.text-group1 h1 {
+	font-size: 100px;
+	margin: 0 0;
+}
+
+.text-group1 p {
+	font-size: 20px;
+}
+
+.social-media {
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.social-buttons {
+	color: gray;
+}
+
+#linkedin:hover {
+	color: #0e76a8;
+	transition: all 0.3s ease;
+}
+#github:hover {
+	color: black;
+	transition: all 0.3s ease;
+}
+#facebook:hover {
+	color: #4267B2;
+	transition: all 0.3s ease;
+}
+#instagram:hover {
+	color: #E1306C;
+	transition: all 0.3s ease;
+}
+
+#email-link {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+/* bio section */
+.bio {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.bio .col1 {
+	width: 300px;
+	display: flex;
+  	justify-content: center;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	margin-top: 0.7em;
+}
+
+.bio .col2 {
+	width: 700px;
+	padding: 0 50px;
+}
+
+.bio .col2 p {
+	text-indent: 30px;
+}
+
+
+/* projects section */
+.projects {
+	padding: 0 50px 50px 50px;
+}
+
+.projects img {
+	width: 400px;
+}
+
+#one {
+	width: 200px;
+}
+#two {
+	width: 200px;
+}
+
+.android-wrapper {
+	width: 400px;
+	display: flex;
+}
+
+.img-col {
+	width: 400px;
+}
+
+.text-col {
+	width: 400px;
+	padding: 0 20px;
+}
+
+.row {
+	margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.row-title {
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	color: gray;
+}
+
+.tag-text {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.bio-text {
+	text-indent: 30px;
+}
+
+.project-links {
+	text-decoration: underline;
+	color: blue;
+}
+
+/* footer */
+.footer {
+	text-align: center;
+}
+.footer p {
+	text-decoration: underline;
+}
+
+.easter-egg {
+	width: 140px;
+}
+
+/* if screen is small */
+@media only screen and (max-width: 1100px) {
+	/* bio section */
+	.div-title {
+		text-indent: 0px;
+		text-align: center;
+	}
+	.bio {
+		flex-wrap: wrap;
+	}
+
+	/* projects section */
+	.row {
+		margin-bottom: 50px;
+		flex-direction: column;
+	}
+	.row-title {
+		text-align: center;
+	}
+	.img-col {
+		margin: 0 auto;
+		width: 300px;
+	}
+	.projects img {
+		width: 300px;
+	}
+
+	#one {
+		width: 150px;
+	}
+	#two {
+		width: 150px;
+	}
+
+	.text-col {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
