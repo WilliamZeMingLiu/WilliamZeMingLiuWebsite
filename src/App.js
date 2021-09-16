@@ -4,10 +4,13 @@ import './App.css';
 import profilepic from './assets/profilepic.png';
 import mytaurus from './assets/mytaurus.png';
 import eth from './assets/eth.jpeg';
+import synthetix from './assets/synthetix.jpeg';
 import nba from './assets/nba.png';
 import android from './assets/android.png';
 import angular from './assets/angular.png';
 import homevideos from './assets/homevideos.png';
+import spacy from './assets/spacy.jpg';
+
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -31,14 +34,15 @@ const tag1 = "React / NodeJS / Express / Firebase / Polygon / Postman / Heroku";
 const tag2 = "React / NodeJS / Express";
 const tag3 = "Angular / Android Studio (Java) / NodeJS / Express / Google Cloud Platform";
 const tag4 = "React / NodeJS / Express / SQLite";
+const tag5 = "React / GraphQL / Terra Blockchain / Google Cloud Platform";
+const tag6 = "React / Bootstrap / Python / Flask / spaCy";
 
 const textProject1 = "MyTaurus is a web application that acts as a management dashboard for your financial assets, specifically cryptocurrencies and stocks.  The main goal for this application is to provide users a single platform to manage all their asset types.  Features include user accounts and authentification, visual KPI graphs, adding and removing assets to portfolio, searching for specific assets using autocomplete search bar, and asynchronous data that updates in real time.  I was responsible for the front-end development and worked with four other software engineers to complete this project";
 const textProject2 = "NBA StatHub is a web application that provides users relevant and live NBA information.  Functionalities include game schedules, injury/news updates, live game standings, and player/team season statistics.  One of my favourite features is the player and team comparator, users can pick any two players (or teams) and compare each other’s statistics.  I developed this full-stack application independently.";
 const textProject3 = "This unnamed web and Android mobile application utilises TicketMaster’s API data to display live entertainment events.  Users fill out forms to input what events they want to be displayed, users can filter based on event category, keywords, distance from their current location or from a specified location.  Search results return all relevant events and their information.  Other functionalities include favouriting events and displaying Google Maps with the venue location.  I worked on both applications independently.";
 const textProject4 = "Liu Family’s Home videos is a simple web application I made during COVID.  My father had a hard drive of dozens of hours of video tape that he shot throughout my childhood.  I decided to help him edit the videos and upload them to a Google cloud drive.  Using my web application knowledge and experience, I decided to create a website to share these home videos with our distant family and friends.  I independently developed this full-stack application. ";
-
-const textProject5 = "Currently working on an Ethereum Dapp that enables users to swap tokens.  Implementing with Web3.js, MetaMask, and Uniswap."
-
+const textProject5 = "Synthetix is a dApp (decentralized finance app) that enables users to manage crypto wallets and trade crypto.  Powered by the Terra blockchain.";
+const textProject6 = "This web app enables users to input any text, and using the Python module spaCy, identifies named entities for NLP learning.";
 
 const resumeUrl = 'https://drive.google.com/file/d/1Rr1xAvAUGJljxwO_KuO7zB9wKjatjncV/view?usp=sharing';
 
@@ -120,15 +124,22 @@ function App() {
             
             <h1 className="div-title">Projects</h1>
             <div className="projects">
-                <h1 className="row-title">Current Project</h1>
+
+
+                <h1 className="row-title">Synthetix</h1>
                 <div className="row">
                     <div className="img-col">
-                        <img alt="project" src={eth} />
+                        <img alt="project" src={synthetix} />
                     </div>
                     <div className="text-col">
+                        <p className="tag-text">{tag5}</p>
+                        <a className="project-links" href="https://fluted-current-324004.wl.r.appspot.com/" target="_blank">App Link</a> 
+                        <a>  |  </a>
+                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/synthetix" target="_blank">Github</a> 
                         <p className="bio-text">{textProject5}</p>  
                     </div>
                 </div>
+
                 <h1 className="row-title">MyTaurus</h1>
                 <div className="row">
                     <div className="img-col">
@@ -171,6 +182,17 @@ function App() {
                         <a>  |  </a>
                         <a className="project-links" href="https://www.youtube.com/watch?v=ioCsP15ckjM" target="_blank">App Demo Video</a> 
                         <p className="bio-text">{textProject3}</p>
+                    </div>
+                </div>
+                <h1 className="row-title">NLP Named Entity Recognition</h1>
+                <div className="row">
+                    <div className="img-col">
+                        <img alt="project" src={spacy} />
+                    </div>
+                    <div className="text-col">
+                        <p className="tag-text">{tag6}</p>
+                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/web-ner-challenge" target="_blank">Github</a> 
+                        <p className="bio-text">{textProject6}</p>  
                     </div>
                 </div>
                 <h1 className="row-title">Liu Family's Home Videos</h1>
