@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.670966a4.chunk.css",
-    "main.js": "/static/js/main.986e6586.chunk.js",
-    "main.js.map": "/static/js/main.986e6586.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.be8d0f76.js",
-    "runtime-main.js.map": "/static/js/runtime-main.be8d0f76.js.map",
-    "static/js/2.e9cd365f.chunk.js": "/static/js/2.e9cd365f.chunk.js",
-    "static/js/2.e9cd365f.chunk.js.map": "/static/js/2.e9cd365f.chunk.js.map",
-    "static/js/3.b11dd636.chunk.js": "/static/js/3.b11dd636.chunk.js",
-    "static/js/3.b11dd636.chunk.js.map": "/static/js/3.b11dd636.chunk.js.map",
+    "main.css": "/static/css/main.e246a01c.chunk.css",
+    "main.js": "/static/js/main.83bb7bb5.chunk.js",
+    "main.js.map": "/static/js/main.83bb7bb5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.43f33d12.js",
+    "runtime-main.js.map": "/static/js/runtime-main.43f33d12.js.map",
+    "static/js/2.558ee376.chunk.js": "/static/js/2.558ee376.chunk.js",
+    "static/js/2.558ee376.chunk.js.map": "/static/js/2.558ee376.chunk.js.map",
+    "static/js/3.731d9428.chunk.js": "/static/js/3.731d9428.chunk.js",
+    "static/js/3.731d9428.chunk.js.map": "/static/js/3.731d9428.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.670966a4.chunk.css.map": "/static/css/main.670966a4.chunk.css.map",
-    "static/js/2.e9cd365f.chunk.js.LICENSE.txt": "/static/js/2.e9cd365f.chunk.js.LICENSE.txt",
+    "static/css/main.e246a01c.chunk.css.map": "/static/css/main.e246a01c.chunk.css.map",
+    "static/js/2.558ee376.chunk.js.LICENSE.txt": "/static/js/2.558ee376.chunk.js.LICENSE.txt",
     "static/media/android.edec9592.png": "/static/media/android.edec9592.png",
     "static/media/angular.5412ad46.png": "/static/media/angular.5412ad46.png",
-    "static/media/eth.7a4260b2.jpeg": "/static/media/eth.7a4260b2.jpeg",
     "static/media/homevideos.f0028621.png": "/static/media/homevideos.f0028621.png",
     "static/media/mytaurus.fcddfb65.png": "/static/media/mytaurus.fcddfb65.png",
     "static/media/nba.7c9e6ca1.png": "/static/media/nba.7c9e6ca1.png",
-    "static/media/profilepic.6f07621a.png": "/static/media/profilepic.6f07621a.png",
+    "static/media/profile-pic.82a55d92.jpg": "/static/media/profile-pic.82a55d92.jpg",
     "static/media/spacy.a63bb2bb.jpg": "/static/media/spacy.a63bb2bb.jpg",
     "static/media/synthetix.b6779f78.jpeg": "/static/media/synthetix.b6779f78.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.be8d0f76.js",
-    "static/js/2.e9cd365f.chunk.js",
-    "static/css/main.670966a4.chunk.css",
-    "static/js/main.986e6586.chunk.js"
+    "static/js/runtime-main.43f33d12.js",
+    "static/js/2.558ee376.chunk.js",
+    "static/css/main.e246a01c.chunk.css",
+    "static/js/main.83bb7bb5.chunk.js"
   ]
 }
