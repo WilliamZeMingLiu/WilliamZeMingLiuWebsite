@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -14,7 +12,7 @@ h1 {
 
 p {
 	font-family: 'Roboto', sans-serif;
-	color: gray;
+	color: black;
 }
 
 .app {
@@ -36,6 +34,10 @@ p {
 	display: flex;
   	justify-content: center;
   	align-items: center;
+}
+
+.main-title {
+	cursor: pointer;
 }
 
 
@@ -72,6 +74,12 @@ p {
 	margin: 0 0;
 }
 
+.text-group1 p a {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 .text-group1 p {
 	font-size: 20px;
 }
@@ -79,33 +87,31 @@ p {
 .social-media {
 	display: flex;
 	justify-content: space-between;
-	width: 200px;
+	width: 80px;
 	margin: 0 auto;
 }
 
-.social-buttons {
-	color: gray;
-}
-
-#linkedin:hover {
+#linkedin {
 	color: #0e76a8;
 	transition: all 0.3s ease;
 }
-#github:hover {
+#github {
 	color: black;
 	transition: all 0.3s ease;
 }
-#facebook:hover {
-	color: #4267B2;
+
+#linkedin:hover {
+	color: #3396cc;
 	transition: all 0.3s ease;
 }
-#instagram:hover {
-	color: #E1306C;
+#github:hover {
+	color: #333333;
 	transition: all 0.3s ease;
 }
 
 #email-link {
 	color: blue;
+	cursor: pointer;
 	text-decoration: underline;
 }
 
@@ -125,8 +131,8 @@ p {
 
 .profile-pic {
 	border-radius: 50%;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	margin-top: 0.7em;
 }
 
@@ -180,7 +186,7 @@ p {
 .row-title {
 	font-size: 24px;
 	font-family: 'Roboto', sans-serif;
-	color: gray;
+	color: black;
 }
 
 .tag-text {

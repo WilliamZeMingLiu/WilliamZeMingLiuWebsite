@@ -1,1 +1,1 @@
-Made using ReactJS.  HTML/CSS were all programmed by me. Hope you like it :)
+Made with React, JavaScript, HTML/CSS. Hosted by GitHub pages. This is my portfolio app, so I hope you get to know me better :)

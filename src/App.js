@@ -1,9 +1,8 @@
 import Button from '@material-ui/core/Button';
 
 import './App.css';
-import profilepic from './assets/profilepic.png';
+import profilepic from './assets/profile-pic.jpg';
 import mytaurus from './assets/mytaurus.png';
-import eth from './assets/eth.jpeg';
 import synthetix from './assets/synthetix.jpeg';
 import nba from './assets/nba.png';
 import android from './assets/android.png';
@@ -14,21 +13,18 @@ import spacy from './assets/spacy.jpg';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 
-const textIntro = "Hello! I'm a Hong Kong born full-stack and front-end developer currently based in California. I am a graduate student studying at USC and currently am seeking employment for 2021.  I hope my personal website will help you learn a little bit more about myself.";
+const textIntro = `Hello! I'm a Hong Kong born software developer currently based in Los Angeles, California.
+I graduated from USC with a Master's and Bachelor's degree in Computer Science.
+I'm currently employed at a cool startup called <a id="acuity-link" href="https://www.acuitymd.com/" target="_blank" >AcuityMD</a>.
+This is my personal website, so I hope you learn a little bit about me.
+`;
 const textEmail = "williamzemingliu@gmail.com"
-const textBio1 = "Born and raised in Hong Kong, I spent my whole K-12 education attending Hong Kong International School. I was accepted into USC in 2017 as an Economics major, however early in my freshman year my interest in computer science and programming grew. I was also interested in business management, specifically the business behind building and funding startup tech companies. Thankfully, USC offered a double major program that allowed me to study both a Computer Science degree and Business Administration degree, exposing me to both the business and engineering aspects of technology.  Currently I am pursuing my Master’s degree in Computer Science at USC Viterbi, and I look forward to learning new things and improving my professional skills in the near future."
-const textBio2 = "My most recent internship was interning at JUMP Investors, a venture capital company that is run by the co-founder of Akamai Technologies, Randall Kaplan. I decided to work at a VC because I wanted to explore the business of technology companies. I learned a great deal from reviewing pitch decks, drafting reports, and data entry for JUMP's in-house startup company, Sandee. In fact, I was the intern that provided the most amount of content creation for Sandee's website during that summer."
-const textBio3 = "My previous internship was an quality assurance intern position at Aura Labs, a small startup company based in Hong Kong that builds websites and mobile applications for companies. This was my first experience working in an office, and the fact that this company comprised of less than 10 people at the time made me interested in working for startups in the future. Through my role, I was able to help identify over 20 bugs/mistakes on a client's website, ensuring that the application was published with zero bugs."
 
 const linkedinUrl = "https://www.linkedin.com/in/william-ze-ming/";
 const githubUrl = "https://github.com/WilliamZeMingLiu";
-const facebookUrl = "https://www.facebook.com/william.liu.754";
-const instagramUrl = "https://www.instagram.com/silly_billy_hk/";
 
 const tag1 = "React / NodeJS / Express / Firebase / Polygon / Postman / Heroku";
 const tag2 = "React / NodeJS / Express";
@@ -52,7 +48,7 @@ function App() {
 
   function handleClick() {
     if(isClicked){
-        document.body.style.background = "white";
+        document.body.style.background = "#faf0e6";
         document.body.style.animation = "";
         
 
@@ -60,16 +56,22 @@ function App() {
         header.forEach((child) => { child.style.color = 'black' });
 
         const rowTitle = [...document.getElementsByClassName('row-title')];
-        rowTitle.forEach((child) => { child.style.color = 'gray' });
+        rowTitle.forEach((child) => { child.style.color = 'black' });
 
         const paragraph = [...document.getElementsByTagName('p')];
-        paragraph.forEach((child) => { child.style.color = 'gray' });
+        paragraph.forEach((child) => { child.style.color = 'black' });
 
         document.getElementById("email-link").style.color = "blue";
+        document.getElementById("acuity-link").style.color = "blue";
+        document.getElementById("project-link1").style.color = "blue";
+        document.getElementById("project-link2").style.color = "blue";
+        document.getElementById("project-link3").style.color = "blue";
+        document.getElementById("project-link4").style.color = "blue";
+        document.getElementById("project-link5").style.color = "blue";
     }
     else{
         document.body.style.background = "#4cc9f0";
-        document.body.style.animation = "gradient 20s linear infinite";
+        document.body.style.animation = "gradient 8s linear infinite";
         
         const header = [...document.getElementsByTagName('h1')];
         header.forEach((child) => { child.style.color = 'white' });
@@ -78,6 +80,12 @@ function App() {
         paragraph.forEach((child) => { child.style.color = 'lightgray' });
 
         document.getElementById("email-link").style.color = "yellow";
+        document.getElementById("acuity-link").style.color = "yellow";
+        document.getElementById("project-link1").style.color = "yellow";
+        document.getElementById("project-link2").style.color = "yellow";
+        document.getElementById("project-link3").style.color = "yellow";
+        document.getElementById("project-link4").style.color = "yellow";
+        document.getElementById("project-link5").style.color = "yellow";
 
     }
     isClicked = !isClicked;
@@ -89,14 +97,8 @@ function App() {
     		<div className="intro">
                 <div className="text-group1">
         			<a onClick={handleClick} className="main-title"><h1>I'm William Liu.</h1></a>
-                    <p>{textIntro}</p>
-                    <div className="social-media">
-                        <a className="social-buttons" id="linkedin" href={linkedinUrl} rel="noreferrer" target="_blank"><LinkedInIcon fontSize="large" /></a>
-                        <a className="social-buttons" id="github" href={githubUrl} rel="noreferrer" target="_blank"><GitHubIcon fontSize="large" /></a>
-                        <a className="social-buttons" id="facebook" href={facebookUrl} rel="noreferrer" target="_blank"><FacebookIcon fontSize="large" /></a>
-                        <a className="social-buttons" id="instagram" href={instagramUrl} rel="noreferrer" target="_blank"><InstagramIcon fontSize="large" /></a>
-                    </div>
-                    <p id="email-link">{textEmail}</p>
+                    <img className="profile-pic" alt="profile pic" src={profilepic} />
+                    <p dangerouslySetInnerHTML={{ __html: textIntro }}></p>
                     <Button
                         target="_blank"
                         href={resumeUrl}
@@ -107,22 +109,15 @@ function App() {
                     >
                     Resume
                     </Button>
+                    <a href = "mailto: williamzemingliu@gmail.com"><p id="email-link">{textEmail}</p></a>
+                    <div className="social-media">
+                        <a className="social-buttons" id="linkedin" href={linkedinUrl} rel="noreferrer" target="_blank"><LinkedInIcon fontSize="large" /></a>
+                        <a className="social-buttons" id="github" href={githubUrl} rel="noreferrer" target="_blank"><GitHubIcon fontSize="large" /></a>
+                    </div>
                 </div>
     		</div>
-
-            <h1 className="div-title">About Me</h1>
-            <div className="bio">
-                <div className="col1">
-                    <img className="profile-pic" alt="profile pic" src={profilepic} />
-                </div>
-                <div className="col2">
-                    <p>{textBio1}</p>
-                    <p>{textBio2}</p>
-                    <p>{textBio3}</p>
-                </div>
-            </div>
             
-            <h1 className="div-title">Projects</h1>
+            <h1 className="div-title">Some coding projects I made</h1>
             <div className="projects">
 
 
@@ -133,9 +128,9 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag5}</p>
-                        <a className="project-links" href="https://fluted-current-324004.wl.r.appspot.com/" target="_blank">App Link</a> 
-                        <a>  |  </a>
-                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/synthetix" target="_blank">Github</a> 
+                        {/* <a className="project-links" href="https://fluted-current-324004.wl.r.appspot.com/" target="_blank">App Link</a>  */}
+                        {/* <a>  |  </a> */}
+                        <a id="project-link1" className="project-links" href="https://github.com/WilliamZeMingLiu/synthetix" target="_blank">Github</a> 
                         <p className="bio-text">{textProject5}</p>  
                     </div>
                 </div>
@@ -148,9 +143,9 @@ function App() {
                     
                     <div className="text-col">
                         <p className="tag-text">{tag1}</p>
-                        <a className="project-links" href="https://mytaurus-frontend.herokuapp.com/" target="_blank">App Link</a> 
-                        <a>  |  </a>
-                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/mytaurus-frontend" target="_blank">Github</a> 
+                        {/* <a className="project-links" href="https://mytaurus-frontend.herokuapp.com/" target="_blank">App Link</a>  */}
+                        {/* <a>  |  </a> */}
+                        <a id="project-link2" className="project-links" href="https://github.com/WilliamZeMingLiu/mytaurus-frontend" target="_blank">Github</a> 
                         <p className="bio-text">{textProject1}</p> 
                         
                     </div>
@@ -162,9 +157,9 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag2}</p>
-                        <a className="project-links" href="https://pristine-crater-lake-96345.herokuapp.com/" target="_blank">App Link</a> 
-                        <a>  |  </a>
-                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/nba-app" target="_blank">Github</a> 
+                        {/* <a className="project-links" href="https://pristine-crater-lake-96345.herokuapp.com/" target="_blank">App Link</a>  */}
+                        {/* <a>  |  </a> */}
+                        <a id="project-link3" className="project-links" href="https://github.com/WilliamZeMingLiu/nba-app" target="_blank">Github</a> 
                         <p className="bio-text">{textProject2}</p>
                     </div>
                 </div>
@@ -178,9 +173,9 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag3}</p>
-                        <a className="project-links" href="https://hmw8-9485766.wl.r.appspot.com/" target="_blank">Web Link</a> 
-                        <a>  |  </a>
-                        <a className="project-links" href="https://www.youtube.com/watch?v=ioCsP15ckjM" target="_blank">App Demo Video</a> 
+                        {/* <a className="project-links" href="https://hmw8-9485766.wl.r.appspot.com/" target="_blank">Web Link</a>  */}
+                        {/* <a>  |  </a> */}
+                        <a id="project-link4" className="project-links" href="https://www.youtube.com/watch?v=ioCsP15ckjM" target="_blank">App Demo (Video)</a> 
                         <p className="bio-text">{textProject3}</p>
                     </div>
                 </div>
@@ -191,7 +186,7 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag6}</p>
-                        <a className="project-links" href="https://github.com/WilliamZeMingLiu/web-ner-challenge" target="_blank">Github</a> 
+                        <a id="project-link5" className="project-links" href="https://github.com/WilliamZeMingLiu/web-ner-challenge" target="_blank">Github</a> 
                         <p className="bio-text">{textProject6}</p>  
                     </div>
                 </div>
@@ -202,7 +197,7 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag4}</p>
-                        <a className="project-links" href="https://liufamilyhomevideos.com/" target="_blank">App Link</a>
+                        {/* <a className="project-links" href="https://liufamilyhomevideos.com/" target="_blank">App Link</a> */}
                         <p className="bio-text">{textProject4}</p>
                     </div>
                 </div>
@@ -213,7 +208,7 @@ function App() {
     	</div>
 
         <div className="footer">
-            <p>a website made by william liu.</p>
+            <p>A website made by William Liu</p>
         </div>
     	
     </div>
