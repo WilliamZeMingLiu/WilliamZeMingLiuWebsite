@@ -71,7 +71,7 @@ function App() {
     }
     else{
         document.body.style.background = "#4cc9f0";
-        document.body.style.animation = "gradient 8s linear infinite";
+        document.body.style.animation = "gradient 4s linear infinite";
         
         const header = [...document.getElementsByTagName('h1')];
         header.forEach((child) => { child.style.color = 'white' });
@@ -117,7 +117,7 @@ function App() {
                 </div>
     		</div>
             
-            <h1 className="div-title">Some coding projects I made</h1>
+            <h1 className="div-title">Projects</h1>
             <div className="projects">
 
 
@@ -130,7 +130,7 @@ function App() {
                         <p className="tag-text">{tag5}</p>
                         {/* <a className="project-links" href="https://fluted-current-324004.wl.r.appspot.com/" target="_blank">App Link</a>  */}
                         {/* <a>  |  </a> */}
-                        <a id="project-link1" className="project-links" href="https://github.com/WilliamZeMingLiu/synthetix" target="_blank">Github</a> 
+                        {/* <a id="project-link1" className="project-links" href="https://github.com/WilliamZeMingLiu/synthetix" target="_blank">Github</a>  */}
                         <p className="bio-text">{textProject5}</p>  
                     </div>
                 </div>
@@ -145,7 +145,7 @@ function App() {
                         <p className="tag-text">{tag1}</p>
                         {/* <a className="project-links" href="https://mytaurus-frontend.herokuapp.com/" target="_blank">App Link</a>  */}
                         {/* <a>  |  </a> */}
-                        <a id="project-link2" className="project-links" href="https://github.com/WilliamZeMingLiu/mytaurus-frontend" target="_blank">Github</a> 
+                        {/* <a id="project-link2" className="project-links" href="https://github.com/WilliamZeMingLiu/mytaurus-frontend" target="_blank">Github</a>  */}
                         <p className="bio-text">{textProject1}</p> 
                         
                     </div>
@@ -159,7 +159,7 @@ function App() {
                         <p className="tag-text">{tag2}</p>
                         {/* <a className="project-links" href="https://pristine-crater-lake-96345.herokuapp.com/" target="_blank">App Link</a>  */}
                         {/* <a>  |  </a> */}
-                        <a id="project-link3" className="project-links" href="https://github.com/WilliamZeMingLiu/nba-app" target="_blank">Github</a> 
+                        {/* <a id="project-link3" className="project-links" href="https://github.com/WilliamZeMingLiu/nba-app" target="_blank">Github</a>  */}
                         <p className="bio-text">{textProject2}</p>
                     </div>
                 </div>
@@ -186,7 +186,7 @@ function App() {
                     </div>
                     <div className="text-col">
                         <p className="tag-text">{tag6}</p>
-                        <a id="project-link5" className="project-links" href="https://github.com/WilliamZeMingLiu/web-ner-challenge" target="_blank">Github</a> 
+                        {/* <a id="project-link5" className="project-links" href="https://github.com/WilliamZeMingLiu/web-ner-challenge" target="_blank">Github</a>  */}
                         <p className="bio-text">{textProject6}</p>  
                     </div>
                 </div>
@@ -202,7 +202,7 @@ function App() {
                     </div>
                 </div>
                 <div className="easter-egg">
-                    <p>*click on my name above to see something cool</p>
+                    <p>*click on my name to see something cool</p>
                 </div>
             </div>
     	</div>
