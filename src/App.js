@@ -60,11 +60,11 @@ function App() {
 
         document.getElementById("email-link").style.color = "blue";
         document.getElementById("acuity-link").style.color = "blue";
-        document.getElementById("project-link1").style.color = "blue";
-        document.getElementById("project-link2").style.color = "blue";
-        document.getElementById("project-link3").style.color = "blue";
+        // document.getElementById("project-link1").style.color = "blue";
+        // document.getElementById("project-link2").style.color = "blue";
+        // document.getElementById("project-link3").style.color = "blue";
         document.getElementById("project-link4").style.color = "blue";
-        document.getElementById("project-link5").style.color = "blue";
+        // document.getElementById("project-link5").style.color = "blue";
     }
     else{
         document.body.style.background = "#4cc9f0";
@@ -78,11 +78,11 @@ function App() {
 
         document.getElementById("email-link").style.color = "yellow";
         document.getElementById("acuity-link").style.color = "yellow";
-        document.getElementById("project-link1").style.color = "yellow";
-        document.getElementById("project-link2").style.color = "yellow";
-        document.getElementById("project-link3").style.color = "yellow";
+        // document.getElementById("project-link1").style.color = "yellow";
+        // document.getElementById("project-link2").style.color = "yellow";
+        // document.getElementById("project-link3").style.color = "yellow";
         document.getElementById("project-link4").style.color = "yellow";
-        document.getElementById("project-link5").style.color = "yellow";
+        // document.getElementById("project-link5").style.color = "yellow";
 
     }
     isClicked = !isClicked;
