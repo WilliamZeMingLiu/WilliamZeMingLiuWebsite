@@ -47,7 +47,10 @@ var isClicked = false;
 function App() {
 
   function handleClick() {
+    console.log(isClicked);
     if(isClicked){
+        console.log("1");
+
         document.body.style.background = "#faf0e6";
         document.body.style.animation = "";
         
@@ -70,6 +73,8 @@ function App() {
         document.getElementById("project-link5").style.color = "blue";
     }
     else{
+        console.log("2");
+
         document.body.style.background = "#4cc9f0";
         document.body.style.animation = "gradient 4s linear infinite";
         
