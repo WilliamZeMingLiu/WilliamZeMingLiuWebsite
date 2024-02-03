@@ -81,7 +81,7 @@ function App() {
         paragraph.forEach((child) => { child.style.color = 'lightgray' });
 
         document.getElementById("email-link").style.color = "yellow";
-        document.getElementById("acuity-link").style.color = "yellow";
+        // document.getElementById("acuity-link").style.color = "yellow";
         document.getElementById("project-link1").style.color = "yellow";
         document.getElementById("project-link2").style.color = "yellow";
         document.getElementById("project-link3").style.color = "yellow";
