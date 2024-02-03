@@ -47,46 +47,45 @@ function App() {
   const [isClicked, setIsClicked] = useState(false);
 
   function handleClick() {
-    console.log("HELLO")
     if(isClicked){
-        document.body.style.background = "#faf0e6";
-        document.body.style.animation = "";
+        // document.body.style.background = "#faf0e6";
+        // document.body.style.animation = "";
         
 
-        const header = [...document.getElementsByTagName('h1')];
-        header.forEach((child) => { child.style.color = 'black' });
+        // const header = [...document.getElementsByTagName('h1')];
+        // header.forEach((child) => { child.style.color = 'black' });
 
-        const rowTitle = [...document.getElementsByClassName('row-title')];
-        rowTitle.forEach((child) => { child.style.color = 'black' });
+        // const rowTitle = [...document.getElementsByClassName('row-title')];
+        // rowTitle.forEach((child) => { child.style.color = 'black' });
 
-        const paragraph = [...document.getElementsByTagName('p')];
-        paragraph.forEach((child) => { child.style.color = 'black' });
+        // const paragraph = [...document.getElementsByTagName('p')];
+        // paragraph.forEach((child) => { child.style.color = 'black' });
 
-        document.getElementById("email-link").style.color = "blue";
-        document.getElementById("acuity-link").style.color = "blue";
-        document.getElementById("project-link1").style.color = "blue";
-        document.getElementById("project-link2").style.color = "blue";
-        document.getElementById("project-link3").style.color = "blue";
-        document.getElementById("project-link4").style.color = "blue";
-        document.getElementById("project-link5").style.color = "blue";
+        // document.getElementById("email-link").style.color = "blue";
+        // document.getElementById("acuity-link").style.color = "blue";
+        // document.getElementById("project-link1").style.color = "blue";
+        // document.getElementById("project-link2").style.color = "blue";
+        // document.getElementById("project-link3").style.color = "blue";
+        // document.getElementById("project-link4").style.color = "blue";
+        // document.getElementById("project-link5").style.color = "blue";
     }
     else{
-        document.body.style.background = "#4cc9f0";
-        document.body.style.animation = "gradient 4s linear infinite";
+        // document.body.style.background = "#4cc9f0";
+        // document.body.style.animation = "gradient 4s linear infinite";
         
-        const header = [...document.getElementsByTagName('h1')];
-        header.forEach((child) => { child.style.color = 'white' });
+        // const header = [...document.getElementsByTagName('h1')];
+        // header.forEach((child) => { child.style.color = 'white' });
 
-        const paragraph = [...document.getElementsByTagName('p')];
-        paragraph.forEach((child) => { child.style.color = 'lightgray' });
+        // const paragraph = [...document.getElementsByTagName('p')];
+        // paragraph.forEach((child) => { child.style.color = 'lightgray' });
 
-        document.getElementById("email-link").style.color = "yellow";
+        // document.getElementById("email-link").style.color = "yellow";
         // document.getElementById("acuity-link").style.color = "yellow";
-        document.getElementById("project-link1").style.color = "yellow";
-        document.getElementById("project-link2").style.color = "yellow";
-        document.getElementById("project-link3").style.color = "yellow";
-        document.getElementById("project-link4").style.color = "yellow";
-        document.getElementById("project-link5").style.color = "yellow";
+        // document.getElementById("project-link1").style.color = "yellow";
+        // document.getElementById("project-link2").style.color = "yellow";
+        // document.getElementById("project-link3").style.color = "yellow";
+        // document.getElementById("project-link4").style.color = "yellow";
+        // document.getElementById("project-link5").style.color = "yellow";
 
     }
     setIsClicked(!isClicked);
