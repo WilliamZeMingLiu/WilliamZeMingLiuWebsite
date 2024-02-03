@@ -1,6 +1,5 @@
-import Button from '@material-ui/core/Button';
-
 import './App.css';
+import Button from '@material-ui/core/Button';
 import profilepic from './assets/profile-pic.jpg';
 import mytaurus from './assets/mytaurus.png';
 import synthetix from './assets/synthetix.jpeg';
@@ -9,6 +8,7 @@ import android from './assets/android.png';
 import angular from './assets/angular.png';
 import homevideos from './assets/homevideos.png';
 import spacy from './assets/spacy.jpg';
+import { useState } from 'react';
 
 
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -42,15 +42,13 @@ const textProject6 = "This web app enables users to input any text, and using th
 
 const resumeUrl = 'https://drive.google.com/file/d/1Rr1xAvAUGJljxwO_KuO7zB9wKjatjncV/view?usp=sharing';
 
-var isClicked = false;
 
 function App() {
+  const [isClicked, setIsClicked] = useState(false);
 
   function handleClick() {
-    console.log(isClicked);
+    console.log("HELLO")
     if(isClicked){
-        console.log("1");
-
         document.body.style.background = "#faf0e6";
         document.body.style.animation = "";
         
@@ -73,8 +71,6 @@ function App() {
         document.getElementById("project-link5").style.color = "blue";
     }
     else{
-        console.log("2");
-
         document.body.style.background = "#4cc9f0";
         document.body.style.animation = "gradient 4s linear infinite";
         
@@ -93,7 +89,7 @@ function App() {
         document.getElementById("project-link5").style.color = "yellow";
 
     }
-    isClicked = !isClicked;
+    setIsClicked(!isClicked);
   }
 
   return (
