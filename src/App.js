@@ -8,8 +8,6 @@ import android from './assets/android.png';
 import angular from './assets/angular.png';
 import homevideos from './assets/homevideos.png';
 import spacy from './assets/spacy.jpg';
-import { useState } from 'react';
-
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -42,53 +40,52 @@ const textProject6 = "This web app enables users to input any text, and using th
 
 const resumeUrl = 'https://drive.google.com/file/d/1Rr1xAvAUGJljxwO_KuO7zB9wKjatjncV/view?usp=sharing';
 
+var isClicked = false;
 
 function App() {
-  const [isClicked, setIsClicked] = useState(false);
-
   function handleClick() {
     if(isClicked){
-        // document.body.style.background = "#faf0e6";
-        // document.body.style.animation = "";
+        document.body.style.background = "#faf0e6";
+        document.body.style.animation = "";
         
 
-        // const header = [...document.getElementsByTagName('h1')];
-        // header.forEach((child) => { child.style.color = 'black' });
+        const header = [...document.getElementsByTagName('h1')];
+        header.forEach((child) => { child.style.color = 'black' });
 
-        // const rowTitle = [...document.getElementsByClassName('row-title')];
-        // rowTitle.forEach((child) => { child.style.color = 'black' });
+        const rowTitle = [...document.getElementsByClassName('row-title')];
+        rowTitle.forEach((child) => { child.style.color = 'black' });
 
-        // const paragraph = [...document.getElementsByTagName('p')];
-        // paragraph.forEach((child) => { child.style.color = 'black' });
+        const paragraph = [...document.getElementsByTagName('p')];
+        paragraph.forEach((child) => { child.style.color = 'black' });
 
-        // document.getElementById("email-link").style.color = "blue";
-        // document.getElementById("acuity-link").style.color = "blue";
-        // document.getElementById("project-link1").style.color = "blue";
-        // document.getElementById("project-link2").style.color = "blue";
-        // document.getElementById("project-link3").style.color = "blue";
-        // document.getElementById("project-link4").style.color = "blue";
-        // document.getElementById("project-link5").style.color = "blue";
+        document.getElementById("email-link").style.color = "blue";
+        document.getElementById("acuity-link").style.color = "blue";
+        document.getElementById("project-link1").style.color = "blue";
+        document.getElementById("project-link2").style.color = "blue";
+        document.getElementById("project-link3").style.color = "blue";
+        document.getElementById("project-link4").style.color = "blue";
+        document.getElementById("project-link5").style.color = "blue";
     }
     else{
-        // document.body.style.background = "#4cc9f0";
-        // document.body.style.animation = "gradient 4s linear infinite";
+        document.body.style.background = "#4cc9f0";
+        document.body.style.animation = "gradient 4s linear infinite";
         
-        // const header = [...document.getElementsByTagName('h1')];
-        // header.forEach((child) => { child.style.color = 'white' });
+        const header = [...document.getElementsByTagName('h1')];
+        header.forEach((child) => { child.style.color = 'white' });
 
-        // const paragraph = [...document.getElementsByTagName('p')];
-        // paragraph.forEach((child) => { child.style.color = 'lightgray' });
+        const paragraph = [...document.getElementsByTagName('p')];
+        paragraph.forEach((child) => { child.style.color = 'lightgray' });
 
-        // document.getElementById("email-link").style.color = "yellow";
-        // document.getElementById("acuity-link").style.color = "yellow";
-        // document.getElementById("project-link1").style.color = "yellow";
-        // document.getElementById("project-link2").style.color = "yellow";
-        // document.getElementById("project-link3").style.color = "yellow";
-        // document.getElementById("project-link4").style.color = "yellow";
-        // document.getElementById("project-link5").style.color = "yellow";
+        document.getElementById("email-link").style.color = "yellow";
+        document.getElementById("acuity-link").style.color = "yellow";
+        document.getElementById("project-link1").style.color = "yellow";
+        document.getElementById("project-link2").style.color = "yellow";
+        document.getElementById("project-link3").style.color = "yellow";
+        document.getElementById("project-link4").style.color = "yellow";
+        document.getElementById("project-link5").style.color = "yellow";
 
     }
-    setIsClicked(!isClicked);
+    isClicked = !isClicked;
   }
 
   return (
