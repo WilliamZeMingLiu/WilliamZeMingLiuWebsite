@@ -1,4 +1,4 @@
-Ok, so DON'T forget to to run `npm run build` and to pull the files out into the root directory (assets-manifest.json, index.html, static).
+Ok, so DON'T forget to run `npm run build` and pull the files out into the root directory (`assets-manifest.json`, `index.html`, `static` folder).
 
 You forget to do it last time and you were so confused, this time don't forget William.  Yes, I am talking to myself in the future.
 
